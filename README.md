@@ -1,6 +1,6 @@
 # Yujie Pang / fslee2
 
-> Personal portfolio site: open `index.html` locally or publish this repository as a GitHub Pages site.
+> Personal portfolio site: [fslee2.io](https://fslee2.io) · publish this repository with GitHub Pages and the included `CNAME` file.
 
 Robotics, bimanual imitation learning, dexterous manipulation, teleoperation, and embodied AI experiments.
 
