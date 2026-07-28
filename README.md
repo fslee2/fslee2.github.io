@@ -1,5 +1,7 @@
 # Yujie Pang / fslee2
 
+> Personal portfolio site: open `index.html` locally or publish this repository as a GitHub Pages site.
+
 Robotics, bimanual imitation learning, dexterous manipulation, teleoperation, and embodied AI experiments.
 
 I build small but complete robot systems: simulation assets, control scripts, camera/VR teleoperation tests, and imitation-learning pipelines that can move from a local prototype toward a publishable project.
