@@ -1,5 +1,13 @@
 const filters = document.querySelectorAll('.filter');
 const cards = document.querySelectorAll('.project-card');
+const projectGrid = document.querySelector('.project-grid');
+const pacCard = document.querySelector('.project-pac-act');
+const oldFeatured = document.querySelector('.project-featured');
+if (projectGrid && pacCard && oldFeatured && pacCard !== oldFeatured) {
+  oldFeatured.classList.remove('project-featured');
+  pacCard.classList.add('project-featured');
+  projectGrid.prepend(pacCard);
+}
 
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
