@@ -20,3 +20,4 @@
 .hero-showcase-single{grid-template-columns:1fr}.hero-showcase-single>div{height:310px}.hero-showcase-single img{object-fit:cover;padding:0!important}@media(max-width:800px){.hero-showcase-single>div{height:250px}}
 .project-pac-act .project-media{background:#eaf3fb}.project-pac-act .project-media img{object-fit:contain;background:#eaf3fb}.hero-showcase-single img{object-fit:contain;background:#eaf3fb}
 .project-grid .project-card{display:block}.project-grid .project-card[data-visibility="hidden"]{display:none}
+.project-grid .mes-card{padding:0;background:#eaf3fb url('assets/pack-mes/dashboard-real.png') center/cover no-repeat}.project-grid .mes-card-inner{display:none}
