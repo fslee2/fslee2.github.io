@@ -16,3 +16,4 @@
 .section-heading{text-align:center;display:block}.section-heading .section-intro{width:min(620px,100%);margin:20px auto 0}.filter-row{justify-content:center}
 .project-grid .project-card:nth-of-type(6){display:block}.project-grid .project-card[data-visibility="hidden"]{display:none}
 .hero-showcase-single{grid-template-columns:1fr}.hero-showcase-single>div{height:310px}.hero-showcase-single img{object-fit:cover;padding:0!important}@media(max-width:800px){.hero-showcase-single>div{height:250px}}
+.project-pac-act .project-media{background:#eaf3fb}.project-pac-act .project-media img{object-fit:contain;background:#eaf3fb}.hero-showcase-single img{object-fit:contain;background:#eaf3fb}
