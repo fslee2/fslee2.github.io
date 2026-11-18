@@ -67,9 +67,9 @@ section[id], article[id], header[id] { scroll-margin-top: 30px; }
 .section-nav a[aria-current='location'] { color: var(--accent); text-decoration: underline; text-underline-offset: 5px; }
 .biography-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(180px, 238px);
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
   grid-template-areas: "identity portrait" "bio portrait";
-  column-gap: clamp(32px, 6vw, 90px);
+  column-gap: clamp(28px, 4.5vw, 68px);
   align-items: center;
   padding-block: clamp(32px, 4.4vw, 64px) clamp(32px, 4vw, 58px);
 }
@@ -268,7 +268,7 @@ body:has(.project-dialog[open]) { overflow: hidden; }
   .section-nav a { font-size: 12px; }
   .name-signature { font-size: 17px; }
   .biography-layout {
-    grid-template-columns: minmax(0, 1fr) clamp(82px, 22vw, 135px);
+    grid-template-columns: minmax(0, 1fr) clamp(100px, 28vw, 160px);
     grid-template-areas: "identity portrait" "bio bio";
     gap: 18px;
     padding-block: 30px 32px;
