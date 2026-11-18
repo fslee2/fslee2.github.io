@@ -90,11 +90,23 @@ section[id], article[id], header[id] { scroll-margin-top: 30px; }
   margin: 0;
   padding: 7px;
   border: 1px solid #c9c6b7;
-  border-radius: 48% 48% 7px 7px;
+  border-radius: 15px;
   background: #f4f1e9;
 }
-.profile-visual a, .profile-visual img { display: block; border-radius: inherit; }
-.profile-visual img { width: 100%; height: auto; }
+.profile-visual a {
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  border-radius: 9px;
+}
+.profile-visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.9);
+  transform-origin: 51% 65%;
+}
 .news-section, .academic-section, .education-section {
   border-top: 1px solid var(--line);
   padding-top: 22px;
