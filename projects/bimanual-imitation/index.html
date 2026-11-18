@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bimanual Imitation | Yujie Pang</title>
+  <meta name="description" content="Coordinating two arms for insertion requires that their poses agree over time. This project brings task data, policy inference, and simulation replay together in a quad-insertion environment.">
+  <meta property="og:title" content="Bimanual Imitation · Policy replay for a two-arm insertion task">
+  <meta property="og:description" content="Coordinating two arms for insertion requires that their poses agree over time. This project brings task data, policy inference, and simulation replay together in a quad-insertion environment.">
+  <meta property="og:image" content="https://fslee2.github.io/assets/bimanual/policy-rollout.jpg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baskervville&amp;family=Inter:wght@400;500;600&amp;display=swap">
+  <link rel="stylesheet" href="../project.css">
+  <link rel="stylesheet" href="../../actions.css">
+  <script src="../project.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to project</a>
+<nav class="crumb" aria-label="Back navigation"><a href="../../#projects">← Yujie Pang</a><span>Imitation learning</span></nav>
+<main id="main">
+<header class="hero"><h1>Bimanual Imitation</h1><p class="subtitle">Policy replay for a two-arm insertion task</p>
+<nav class="resources action-row" aria-label="Project resources"><a href="https://github.com/fslee2/biman_imitation_pyj_verison" class="action action--primary"><svg aria-hidden="true" focusable="false"><use href="../../assets/actions.svg#code"></use></svg>Code &amp; experiments</a></nav></header>
+<div class="showcase"><figure class="panel"><div class="frame"><video controls muted playsinline preload="none" src="../../assets/bimanual/policy-rollout.mp4" poster="../../assets/bimanual/policy-rollout.jpg" aria-label="Bimanual policy rollout · MuJoCo simulation"></video></div><figcaption>Bimanual policy rollout · MuJoCo simulation</figcaption></figure></div>
+<nav class="contents" aria-label="On this page"><a href="#overview">Overview</a><a href="#method">From data to rollout</a></nav>
+<section id="overview" class="section">
+<h2>Overview</h2>
+<p>Coordinating two arms for insertion requires that their poses agree over time. This project brings task data, policy inference, and simulation replay together in a quad-insertion environment.</p>
+</section>
+<section id="method" class="section">
+<h2>From data to rollout</h2>
+<p>Demonstrations are converted to a LeRobot-style dataset for ACT inference. The rollout shows the resulting sequence in MuJoCo, where the relative motion of the two end effectors can be inspected frame by frame.</p>
+</section>
+</main>
+<footer><a href="../../" class="action action--quiet"><svg aria-hidden="true" focusable="false"><use href="../../assets/actions.svg#back"></use></svg>Academic homepage</a><a href="#main" class="action action--quiet"><svg aria-hidden="true" focusable="false"><use href="../../assets/actions.svg#up"></use></svg>Back to top</a></footer>
+</body>
+</html>

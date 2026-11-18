@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DexJoCo Teleoperation | Yujie Pang</title>
+  <meta name="description" content="The MuJoCo environment combines a six-axis CR3 arm with a CRAFT Hand. Camera and keyboard inputs map into the same command interface so they can be tested in the same scene.">
+  <meta property="og:title" content="DexJoCo Teleoperation · Cartesian arm commands and finger motion on CR3 × CRAFT">
+  <meta property="og:description" content="The MuJoCo environment combines a six-axis CR3 arm with a CRAFT Hand. Camera and keyboard inputs map into the same command interface so they can be tested in the same scene.">
+  <meta property="og:image" content="https://fslee2.github.io/assets/dexjoco/x-axis.jpg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baskervville&amp;family=Inter:wght@400;500;600&amp;display=swap">
+  <link rel="stylesheet" href="../project.css">
+  <link rel="stylesheet" href="../../actions.css">
+  <script src="../project.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to project</a>
+<nav class="crumb" aria-label="Back navigation"><a href="../../#projects">← Yujie Pang</a><span>Dexterous teleoperation</span></nav>
+<main id="main">
+<header class="hero"><h1>DexJoCo Teleoperation</h1><p class="subtitle">Cartesian arm commands and finger motion on CR3 × CRAFT</p>
+<nav class="resources action-row" aria-label="Project resources"><a href="https://github.com/fslee2/Dexjuco_cr3_crafthand" class="action action--primary"><svg aria-hidden="true" focusable="false"><use href="../../assets/actions.svg#code"></use></svg>Code &amp; setup</a></nav></header>
+<div class="showcase"><figure class="panel"><div class="frame"><video controls muted playsinline preload="none" src="../../assets/dexjoco/x-axis.mp4" poster="../../assets/dexjoco/x-axis.jpg" aria-label="Scripted X-axis motion and finger flexion · DexJoCo"></video></div><figcaption>Scripted X-axis motion and finger flexion · DexJoCo</figcaption></figure></div>
+<nav class="contents" aria-label="On this page"><a href="#overview">Overview</a><a href="#method">Action interface</a><a href="#demonstrations">Camera views</a></nav>
+<section id="overview" class="section">
+<h2>Overview</h2>
+<p>The MuJoCo environment combines a six-axis CR3 arm with a CRAFT Hand. Camera and keyboard inputs map into the same command interface so they can be tested in the same scene.</p>
+</section>
+<section id="method" class="section">
+<h2>Action interface</h2>
+<p>Each action contains a target position, orientation, and 15 finger commands. The video uses a scripted motion along the X axis with finger flexion. The additional camera views show how the same workspace appears from different angles.</p>
+</section>
+<section id="demonstrations" class="section">
+<h2>Camera views</h2>
+<div class="gallery single">
+<figure class="panel"><div class="frame"><a href="../../assets/dexjoco/cr3_craft_camera_grid.jpg" aria-label="Open full-size image: Multiple camera views of the CR3 and CRAFT hand environment"><img src="../../assets/dexjoco/cr3_craft_camera_grid.jpg" alt="Multiple camera views of the CR3 and CRAFT hand environment" loading="lazy"></a></div><figcaption>Multiple camera views from the simulation scene.</figcaption></figure>
+</div>
+</section>
+</main>
+<footer><a href="../../" class="action action--quiet"><svg aria-hidden="true" focusable="false"><use href="../../assets/actions.svg#back"></use></svg>Academic homepage</a><a href="#main" class="action action--quiet"><svg aria-hidden="true" focusable="false"><use href="../../assets/actions.svg#up"></use></svg>Back to top</a></footer>
+</body>
+</html>

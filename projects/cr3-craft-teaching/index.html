@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CR3 × CRAFT Teaching | Yujie Pang</title>
+  <meta name="description" content="This project combines Cartesian arm control with finger targets from MediaPipe. Operators can use a keypad for arm motion or calibrate a torso-relative frame for camera-based teaching.">
+  <meta property="og:title" content="CR3 × CRAFT Teaching · Keyboard and camera inputs for a simulated arm and hand">
+  <meta property="og:description" content="This project combines Cartesian arm control with finger targets from MediaPipe. Operators can use a keypad for arm motion or calibrate a torso-relative frame for camera-based teaching.">
+  <meta property="og:image" content="https://fslee2.github.io/assets/teleop-teacher/cartesian-reach.jpg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baskervville&amp;family=Inter:wght@400;500;600&amp;display=swap">
+  <link rel="stylesheet" href="../project.css">
+  <link rel="stylesheet" href="../../actions.css">
+  <script src="../project.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to project</a>
+<nav class="crumb" aria-label="Back navigation"><a href="../../#projects">← Yujie Pang</a><span>Robot teleoperation</span></nav>
+<main id="main">
+<header class="hero"><h1>CR3 × CRAFT Teaching</h1><p class="subtitle">Keyboard and camera inputs for a simulated arm and hand</p>
+<nav class="resources action-row" aria-label="Project resources"><a href="https://github.com/fslee2/Dobot-CraftHand" class="action action--primary"><svg aria-hidden="true" focusable="false"><use href="../../assets/actions.svg#code"></use></svg>Code &amp; controls</a></nav></header>
+<div class="showcase"><figure class="panel"><div class="frame"><video controls muted playsinline preload="none" src="../../assets/teleop-teacher/cartesian-reach.mp4" poster="../../assets/teleop-teacher/cartesian-reach.jpg" aria-label="Programmed Cartesian reach · MuJoCo kinematic preview"></video></div><figcaption>Programmed Cartesian reach · MuJoCo kinematic preview</figcaption></figure></div>
+<nav class="contents" aria-label="On this page"><a href="#overview">Overview</a><a href="#method">Control in MuJoCo</a><a href="#demonstrations">Teaching scene</a></nav>
+<section id="overview" class="section">
+<h2>Overview</h2>
+<p>This project combines Cartesian arm control with finger targets from MediaPipe. Operators can use a keypad for arm motion or calibrate a torso-relative frame for camera-based teaching.</p>
+</section>
+<section id="method" class="section">
+<h2>Control in MuJoCo</h2>
+<p>The first clip illustrates a programmed Cartesian reach in the project scene. The repository also includes the interactive keyboard and torso-teaching programs, with arm and hand position actuators and instructions for camera calibration.</p>
+</section>
+<section id="demonstrations" class="section">
+<h2>Teaching scene</h2>
+<div class="gallery single">
+<figure class="panel"><div class="frame"><a href="../../assets/teleop-teacher/teleop_teacher_mujoco.png" aria-label="Open full-size image: CR3 arm and CRAFT Hand MuJoCo teleoperation scene"><img src="../../assets/teleop-teacher/teleop_teacher_mujoco.png" alt="CR3 arm and CRAFT Hand MuJoCo teleoperation scene" loading="lazy"></a></div><figcaption>CR3 arm and CRAFT Hand in the MuJoCo teleoperation environment.</figcaption></figure>
+</div>
+</section>
+</main>
+<footer><a href="../../" class="action action--quiet"><svg aria-hidden="true" focusable="false"><use href="../../assets/actions.svg#back"></use></svg>Academic homepage</a><a href="#main" class="action action--quiet"><svg aria-hidden="true" focusable="false"><use href="../../assets/actions.svg#up"></use></svg>Back to top</a></footer>
+</body>
+</html>

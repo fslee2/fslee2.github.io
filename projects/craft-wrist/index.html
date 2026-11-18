@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CRAFT-Wrist | Yujie Pang</title>
+  <meta name="description" content="Changing the angle of a tool can require a large arm movement when the hand is fixed at the wrist. CRAFT-Wrist adds local orientation control between the arm and the tendon-driven CRAFT Hand.">
+  <meta property="og:title" content="CRAFT-Wrist · A Direct Rigid Transmission 2-DoF Wrist Extension for Tendon-Driven Hand">
+  <meta property="og:description" content="Changing the angle of a tool can require a large arm movement when the hand is fixed at the wrist. CRAFT-Wrist adds local orientation control between the arm and the tendon-driven CRAFT Hand.">
+  <meta property="og:image" content="https://fslee2.github.io/assets/publications/craft-wrist-overview.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baskervville&amp;family=Inter:wght@400;500;600&amp;display=swap">
+  <link rel="stylesheet" href="../project.css">
+  <link rel="stylesheet" href="../../actions.css">
+  <script src="../project.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to project</a>
+<nav class="crumb" aria-label="Back navigation"><a href="../../#publications">← Yujie Pang</a><span>Wrist mechanics</span></nav>
+<main id="main">
+<header class="hero"><h1>CRAFT-Wrist</h1><p class="subtitle">A Direct Rigid Transmission 2-DoF Wrist Extension for Tendon-Driven Hand</p><p class="authors"><a href="../../#about">Yujie Pang</a>, Sadman Sakib, Mohammad Abdullah Al Faruque</p><p class="venue">IROS 2026 · Sensors and Actuators for Dexterous Manipulation Workshop</p>
+<nav class="resources action-row" aria-label="Project resources"><a href="paper.pdf" class="action action--primary"><svg aria-hidden="true" focusable="false"><use href="../../assets/actions.svg#paper"></use></svg>Read PDF</a><a href="https://arxiv.org/abs/2609.22681" class="action"><svg aria-hidden="true" focusable="false"><use href="../../assets/actions.svg#paper"></use></svg>arXiv</a><a href="https://craft-wrist.github.io/" class="action"><svg aria-hidden="true" focusable="false"><use href="../../assets/actions.svg#external"></use></svg>Official project</a><a href="https://github.com/fslee2/Craft_wrist-URDF" class="action"><svg aria-hidden="true" focusable="false"><use href="../../assets/actions.svg#code"></use></svg>URDF &amp; code</a></nav></header>
+<div class="showcase pair"><figure class="panel"><div class="frame"><a href="../../assets/publications/craft-wrist-overview.png" aria-label="Open full-size image: CAD assembly, physical prototype, and wrist module from the paper."><img src="../../assets/publications/craft-wrist-overview.png" alt="CAD assembly, physical prototype, and wrist module from the paper." loading="lazy"></a></div><figcaption>CAD assembly, physical prototype, and wrist module from the paper.</figcaption></figure>
+<figure class="panel"><div class="frame"><video controls muted playsinline preload="none" src="../../assets/publications/craft-wrist-hardware.mp4" poster="../../assets/publications/craft-wrist-hardware.jpg" aria-label="Physical prototype · Nail hammering demonstration from the official project site."></video></div><figcaption>Physical prototype · Nail hammering demonstration from the official project site.</figcaption></figure></div>
+<nav class="contents" aria-label="On this page"><a href="#overview">Overview</a><a href="#method">Motion range</a><a href="#demonstrations">Wrist demos</a><a href="#run">Run locally</a><a href="#paper">Paper</a><a href="#citation">BibTeX</a></nav>
+<section id="overview" class="section">
+<h2>Overview</h2>
+<p>Changing the angle of a tool can require a large arm movement when the hand is fixed at the wrist. CRAFT-Wrist adds local orientation control between the arm and the tendon-driven CRAFT Hand.</p>
+</section>
+<section id="method" class="section">
+<h2>Hardware and motion range</h2>
+<p>Two servos drive short rigid transmissions. On the prototype, side-to-side deviation reached 20° in each direction. Front-to-back travel reached 80° in flexion and 18° in extension. The physical demonstration shows the arm and wrist working together during nail hammering.</p>
+</section>
+<section id="demonstrations" class="section">
+<h2>URDF and wrist simulations</h2>
+<p>The CAD-based model exposes 17 independent coordinates. These scripted demonstrations use a provisional two-axis wrist approximation and idealized grasps. The pouring scene represents the contents as grains.</p>
+<div class="gallery">
+<figure class="panel"><div class="frame"><video controls muted playsinline preload="none" src="../../assets/craft-w/cup-pour.mp4" poster="../../assets/craft-w/pour-in-motion.jpg" aria-label="Wrist-driven cup pouring · MuJoCo simulation"></video></div><figcaption>The wrist tilts the cup to dispense grains into a tray.</figcaption></figure>
+<figure class="panel"><div class="frame"><video controls muted playsinline preload="none" src="../../assets/craft-w/urdf-joints.mp4" poster="../../assets/craft-w/urdf-joints.jpg" aria-label="CRAFT-W wrist, finger, and thumb joint motion"></video></div><figcaption>CAD-based kinematic preview of the wrist, fingers, and thumb.</figcaption></figure>
+<figure class="panel"><div class="frame"><video controls muted playsinline preload="none" src="../../assets/craft-w/hammer-nail.mp4" poster="../../assets/craft-w/hammer-nail.jpg" aria-label="Wrist-driven hammering simulation"></video></div><figcaption>A scripted forward wrist stroke moves the hammer along the finger direction.</figcaption></figure>
+<figure class="panel"><div class="frame"><video controls muted playsinline preload="none" src="../../assets/craft-w/brush-sweep.mp4" poster="../../assets/craft-w/brush-sweep.jpg" aria-label="Wrist-driven tabletop brush sweeping simulation"></video></div><figcaption>The wrist moves a brush across the table to sweep debris toward a collection area.</figcaption></figure>
+</div>
+</section>
+<section id="run" class="section">
+<h2>Run locally</h2>
+<p>Run these commands from the CRAFT-W URDF repository with Python 3.12.</p><pre><code>python -m pip install -r requirements-viewer.txt
+python scripts/launch_demo.py wrist --interactive
+python scripts/launch_demo.py cup-pour</code></pre>
+</section>
+<section id="paper" class="section">
+<h2>Paper</h2>
+<div class="paper"><a href="paper.pdf"><img src="paper-cover.jpg" alt="Open the full paper PDF" loading="lazy"></a><div><h3>A Direct Rigid Transmission 2-DoF Wrist Extension for Tendon-Driven Hand</h3><p>Yujie Pang, Sadman Sakib, Mohammad Abdullah Al Faruque<br>IROS 2026 · Sensors and Actuators for Dexterous Manipulation Workshop</p><nav class="action-row" aria-label="Paper links"><a href="paper.pdf" class="action action--primary"><svg aria-hidden="true" focusable="false"><use href="../../assets/actions.svg#paper"></use></svg>Read PDF</a><a href="paper.pdf" download class="action"><svg aria-hidden="true" focusable="false"><use href="../../assets/actions.svg#download"></use></svg>Download PDF</a><a href="https://arxiv.org/abs/2609.22681" class="action action--quiet"><svg aria-hidden="true" focusable="false"><use href="../../assets/actions.svg#paper"></use></svg>arXiv record</a></nav></div></div>
+</section>
+<section id="citation" class="section">
+<h2>BibTeX</h2>
+<pre>@misc{pang2026craftwrist,
+  title = {A Direct Rigid Transmission 2-DoF Wrist Extension for Tendon-Driven Hand},
+  author = {Pang, Yujie and Sakib, Sadman and Al Faruque, Mohammad Abdullah},
+  year = {2026},
+  eprint = {2609.22681},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.RO},
+  url = {https://arxiv.org/abs/2609.22681}
+}</pre><div class="cite-tools action-row"><button type="button" hidden data-copy-citation class="action action--soft"><svg aria-hidden="true" focusable="false"><use href="../../assets/actions.svg#copy"></use></svg>Copy BibTeX</button><a href="citation.bib" download class="action"><svg aria-hidden="true" focusable="false"><use href="../../assets/actions.svg#download"></use></svg>Download .bib</a><span id="copy-status" role="status"></span></div>
+</section>
+</main>
+<footer><a href="../../" class="action action--quiet"><svg aria-hidden="true" focusable="false"><use href="../../assets/actions.svg#back"></use></svg>Academic homepage</a><a href="#main" class="action action--quiet"><svg aria-hidden="true" focusable="false"><use href="../../assets/actions.svg#up"></use></svg>Back to top</a></footer>
+</body>
+</html>

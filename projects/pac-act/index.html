@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PAC-ACT | Yujie Pang</title>
+  <meta name="description" content="A contact policy can reach the right area and still apply too much force. PAC-ACT starts from a pretrained Action Chunking Transformer and fine-tunes how it acts when the starting pose and contact conditions change.">
+  <meta property="og:title" content="PAC-ACT · Post-training Actor-Critic for Action Chunking Transformers">
+  <meta property="og:description" content="A contact policy can reach the right area and still apply too much force. PAC-ACT starts from a pretrained Action Chunking Transformer and fine-tunes how it acts when the starting pose and contact conditions change.">
+  <meta property="og:image" content="https://fslee2.github.io/assets/pac-act/pac_act_architecture.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baskervville&amp;family=Inter:wght@400;500;600&amp;display=swap">
+  <link rel="stylesheet" href="../project.css">
+  <link rel="stylesheet" href="../../actions.css">
+  <script src="../project.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to project</a>
+<nav class="crumb" aria-label="Back navigation"><a href="../../#publications">← Yujie Pang</a><span>Robot learning</span></nav>
+<main id="main">
+<header class="hero"><h1>PAC-ACT</h1><p class="subtitle">Post-training Actor-Critic for Action Chunking Transformers</p><p class="authors"><a href="../../#about">Yujie Pang</a>, Zudong Li</p><p class="venue">arXiv preprint · July 2026</p>
+<nav class="resources action-row" aria-label="Project resources"><a href="paper.pdf" class="action action--primary"><svg aria-hidden="true" focusable="false"><use href="../../assets/actions.svg#paper"></use></svg>Read PDF</a><a href="https://arxiv.org/abs/2607.09590" class="action"><svg aria-hidden="true" focusable="false"><use href="../../assets/actions.svg#paper"></use></svg>arXiv</a><a href="https://github.com/fslee2/PAC-ACT" class="action"><svg aria-hidden="true" focusable="false"><use href="../../assets/actions.svg#code"></use></svg>Code</a></nav></header>
+<div class="showcase"><figure class="panel"><div class="frame"><a href="../../assets/pac-act/pac_act_architecture.png" aria-label="Open full-size image: PAC-ACT architecture · From observations and the pretrained ACT policy to actor–critic updates."><img src="../../assets/pac-act/pac_act_architecture.png" alt="PAC-ACT architecture · From observations and the pretrained ACT policy to actor–critic updates." loading="lazy"></a></div><figcaption>PAC-ACT architecture · From observations and the pretrained ACT policy to actor–critic updates.</figcaption></figure></div>
+<nav class="contents" aria-label="On this page"><a href="#overview">Overview</a><a href="#method">Method</a><a href="#demonstrations">Contact experiment</a><a href="#paper">Paper</a><a href="#citation">BibTeX</a></nav>
+<section id="overview" class="section">
+<h2>Overview</h2>
+<p>A contact policy can reach the right area and still apply too much force. PAC-ACT starts from a pretrained Action Chunking Transformer and fine-tunes how it acts when the starting pose and contact conditions change.</p>
+</section>
+<section id="method" class="section">
+<h2>Learning under contact</h2>
+<p>The actor and critic operate on action chunks. A behavior prior constrains the update so that the policy can explore while retaining the action distribution learned from demonstrations. On the Contour task, the paper reports a 46-fold reduction in the proportion of force readings above 60 N.</p>
+</section>
+<section id="demonstrations" class="section">
+<h2>Contact experiment</h2>
+<p>The video shows an ACT baseline episode in MuJoCo. The paper contains the comparisons with reinforcement-learning post-training.</p>
+<div class="gallery">
+<figure class="panel"><div class="frame"><video controls muted playsinline preload="none" src="../../assets/pac-act/act-contact.mp4" poster="../../assets/pac-act/act-contact.jpg" aria-label="ACT baseline · Metal–rubber contact in MuJoCo"></video></div><figcaption>ACT baseline · Metal–rubber contact in MuJoCo</figcaption></figure>
+<figure class="panel"><div class="frame"><a href="../../assets/pac-act/pac_act_contact_setup.png" aria-label="Open full-size image: PAC-ACT robot arm and depth-camera contact manipulation setup"><img src="../../assets/pac-act/pac_act_contact_setup.png" alt="PAC-ACT robot arm and depth-camera contact manipulation setup" loading="lazy"></a></div><figcaption>Robot and depth-camera setup for contact manipulation.</figcaption></figure>
+</div>
+</section>
+<section id="paper" class="section">
+<h2>Paper</h2>
+<div class="paper"><a href="paper.pdf"><img src="paper-cover.jpg" alt="Open the full paper PDF" loading="lazy"></a><div><h3>PAC-ACT: Post-training Actor-Critic for Action Chunking Transformers</h3><p>Yujie Pang, Zudong Li<br>arXiv preprint · July 2026</p><nav class="action-row" aria-label="Paper links"><a href="paper.pdf" class="action action--primary"><svg aria-hidden="true" focusable="false"><use href="../../assets/actions.svg#paper"></use></svg>Read PDF</a><a href="paper.pdf" download class="action"><svg aria-hidden="true" focusable="false"><use href="../../assets/actions.svg#download"></use></svg>Download PDF</a><a href="https://arxiv.org/abs/2607.09590" class="action action--quiet"><svg aria-hidden="true" focusable="false"><use href="../../assets/actions.svg#paper"></use></svg>arXiv record</a></nav></div></div>
+</section>
+<section id="citation" class="section">
+<h2>BibTeX</h2>
+<pre>@misc{pang2026pacact,
+  title = {PAC-ACT: Post-training Actor-Critic for Action Chunking Transformers},
+  author = {Pang, Yujie and Li, Zudong},
+  year = {2026},
+  eprint = {2607.09590},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.RO},
+  url = {https://arxiv.org/abs/2607.09590}
+}</pre><div class="cite-tools action-row"><button type="button" hidden data-copy-citation class="action action--soft"><svg aria-hidden="true" focusable="false"><use href="../../assets/actions.svg#copy"></use></svg>Copy BibTeX</button><a href="citation.bib" download class="action"><svg aria-hidden="true" focusable="false"><use href="../../assets/actions.svg#download"></use></svg>Download .bib</a><span id="copy-status" role="status"></span></div>
+</section>
+</main>
+<footer><a href="../../" class="action action--quiet"><svg aria-hidden="true" focusable="false"><use href="../../assets/actions.svg#back"></use></svg>Academic homepage</a><a href="#main" class="action action--quiet"><svg aria-hidden="true" focusable="false"><use href="../../assets/actions.svg#up"></use></svg>Back to top</a></footer>
+</body>
+</html>
